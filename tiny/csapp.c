@@ -111,8 +111,8 @@ void Kill(pid_t pid, int signum)
     if ((rc = kill(pid, signum)) < 0)
 	unix_error("Kill error");
 }
-/* $end kill */
 
+/* $end kill */
 void Pause() 
 {
     (void)pause();
